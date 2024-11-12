@@ -2,7 +2,7 @@
 + Other miscellaneous properties & abilities are described on the sheet in natural language, under "other features".
 # Inventories.
 + Characters have two slot-based inventories (Light + Flesh). They can have at most 18 Light & 18 Flesh slots.
-+ Fill and unlock your slots from lowest to highest.
++ Unlock slots from lowest to highest, fill them from highest to lowest.
 + Characters start with 4 Flesh slots, 4 Light slots, and 4 slots to assign freely.
 \
 &nbsp;
