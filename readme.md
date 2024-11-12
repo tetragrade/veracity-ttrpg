@@ -88,7 +88,7 @@
     + Subsequently: They roll on the break table \[TODO, makes your Facets suck].
 + After Breaking, they remove all Stress.
 # Initiative & Combat.
-+ If you can't take any more Stress, your can fight or flee.
++ If you can't take any more Stress, you'd better be prepared to flee or fight.
 \
 &nbsp;
 + Characters start with 0 HP, it is granted by protective equipment & magical means. They regain all HP after a minute-long rest.
