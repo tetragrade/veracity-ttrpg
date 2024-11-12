@@ -1,3 +1,4 @@
++ Characters have HP, Facets, and two slot-based inventories.
 + Other miscellaneous properties & abilities are described on the sheet in natural language, under "other features".
 # Inventories.
 + Characters have two slot-based inventories (Light + Flesh). They can have at most 18 Light & 18 Flesh slots.
