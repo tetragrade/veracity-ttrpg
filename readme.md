@@ -31,7 +31,7 @@
         + You gain Stress each time you act against one of your Facets (see Facets), or violate social convention (see Convention). Supernatural effects can also cause Stress.
         + Remove 1 Stress each time you spend a full day resting on the surface.
 	+ Examples Stress causes:<br><table>
-        <!--<th>Cause</th><th>Stress Gain</th>-->
+        <tr><th>Cause</th><th>Stress Gain</th></tr>
         <!--<tr><td>rejected Facet</td><td>+ Facet die roll</td></tr>-->
         <tr><td>social attack i.e. insult or threat</td><td>variable, Referee's judgement</td></tr>
         <tr><td>flee a social conflict</td><td>+1</td></tr>
