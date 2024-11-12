@@ -26,7 +26,7 @@
         + If you didn't convert a secret to a Secret: your character didn't believe it or consider it important, revealing it can't level them up.
     + Favors.
         + A Favor represents a debt owed to you by an NPC.
-        + If a favor isn't converted a Favor, your character forgot it or it's willing to call it in for some reason.
+        + If a favor isn't converted a Favor, your character forgot it or isn't willing to call it in for some reason.
     + Stress.
         + You gain Stress each time you act against a Facet (see Facets), or violate social Convention (see Combat & Initiative). Supernatural effects can also cause Stress.
         + Remove 1 Stress each time you spend a full day resting on the surface.
