@@ -109,4 +109,3 @@
 + You can choose to surrender at any time during a conflict, ignoring initiative.
 + Once you surrender, you cannot move or influence the conflict until the end of the scene.
 + Before the scene ends, the winning side has an opportunity to do whatever they want to surrendered foes.
----
