@@ -68,7 +68,7 @@
     + Decrease the die size of an existing Facet.
 + d4 Facets can be replaced, given appropriate fictional positioning.
 # Levelling Up.
-+ Each time you shock an NPC by revealing Secrets (optionally supported by Evidence), you gain a slot (Light or Flesh, your choice).
++ Each time you shock an NPC by revealing a Secret (optionally supported by Evidence), you gain a slot (Light or Flesh, your choice).
 + Each Secret and Evidence can only be used in this way once, and each revelation must be greater than the last.
 + The target does not have to believe you to be shocked. If they are both shocked & convinced they are likely to become a permanent ally.
 + Each revelation must be greater than the last.
