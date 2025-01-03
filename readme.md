@@ -38,7 +38,7 @@
         + A Favor represents a debt owed to you by an NPC.
         + If a favor isn't converted a Favor, your character forgot it or isn't willing to call it in for some reason.
     + Stress.
-        + You gain Stress each time you act against a Facet (see Facets), or violate social Convention (see Combat & Initiative). Enemies and hostile environments may also inflict Stress.
+        + You gain Stress for acting against a Facet (see Facets), and violating social Convention (see Combat & Initiative). Enemies and hostile environments may also inflict Stress.
         + Remove 1 Stress each time you spend a full day relaxing in daylight.
 ## Saves.
 + When you attempt to do something for which the outcome is uncertain, the referee may call for a Save.
@@ -50,30 +50,30 @@
 &nbsp;		
 + If the slot is empty you succeed, otherwise you fail.
 ## Levelling Up.
-+ Each time you shock an NPC by revealing Secrets (optionally supported by Evidence), you gain a slot (Light or Flesh, your choice).
++ Each time a PC shocks an NPC by revealing Secrets (optionally supported by Evidence), they gain a slot (Light or Flesh, your choice).
 + Each Secret and Evidence can only be used in this way once, and each revelation must be greater than the last.
 + The target does not have to believe you to be shocked. If they are both shocked & convinced they are likely to become a permanent ally.
 ## Facets.
 + A Facet is a short phrase that relates to your character's behaviour. i.e.
     + Profession: "Blacksmith", "Doctor".
-    + Personality Trait: "Calm", "Curious".
+    + Personality Trait: "Calm", "Cruel".
     + Ideology: "Obey the Gods", "Anarchist".
     + More Abstract: "Violence", "Opium Cravings".
 + Each Facet has an associated die size ∈ {d4, d6, d8 d10, d12}. This corresponds to its prominence.
 \
 &nbsp;
 + Whenever a save is made (by anyone in the scene) as a consequence of acting on one of your Facets, roll the die and modify the difficulty by the total, in your favor.
-+ However, whenever you turn down an opportunity to act on a Facet, gain Stress equal to a roll of the die.
++ However, whenever your character acts counter to one of their Facets, gain Stress equal to a roll of the die. i.e. a "Cruel" character acts nice to someone.
 \
 &nbsp;
-+ You start with one d6 Facet and can have up to four.
-+ Whenever you Level Up, you may choose to either:
-    + Add a new d4 Facet.
-    + Increase the die size of an existing Facet. 
-    + Decrease the die size of an existing Facet.
++ Characters start with one d6 Facet and can have up to four.
++ Your character can gain additional Facets by acting in accordance with the new hypothetical Facet.
+	+ This typically requires a concerted effort over one or two sessions.
+	+ The referee should decide any mechanics on a case-by-case-basis. i.e. random percentage chance, fill a clock, complete a quest or task.
++ When your character take an extreme action (Referee's judgement) for or against a Facet, you may choose to increase or decrease the facet's die size.
 + d4 Facets can be replaced, given appropriate fictional positioning.
 ## Disablement & Death.
-+ Characters die when their Flesh slots are entirely full of Wounds.	
++ Characters die when their Flesh slots are entirely full of Wounds.
 + If a character gains stress with empty Light slots, but not enough to fit all the Stress, the remaining Stress is disgregarded.
 + If they gain Stress with no free Light slots, they Break:
     + The first time: They lose their will to seek. They can no longer level up.
@@ -88,14 +88,18 @@
 \
 &nbsp;
 <br><br><table>
-        <tr><th colspan=2 style="text-align:center">Examples of Causes of Stress</th></tr>
-		<!--<tr><th>Cause</th><th>Stress Gain</th><tr>-->
-        <!--<tr><td>rejected Facet</td><td>+ Facet die roll</td></tr>-->
-        <tr><td>social attack i.e. insult or threat</td><td>variable, Referee's judgement</td></tr>
-        <tr><td>flee a social conflict without enemy's consent</td><td>+1</td></tr>
-        <tr><td>shocked by reveal of Secret</td><td>+d6</td></tr>
-        <tr><td>own compromising Secret revealed</td><td>fill all empty slots with Stress</td></tr>
-        <tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>
+		<thead>
+			<tr><th colspan=2 style="text-align:center">Examples of Causes of Stress</th></tr>
+			<!--<tr><th>Cause</th><th>Stress Gain</th><tr>-->
+			<!--<tr><td>rejected Facet</td><td>+ Facet die roll</td></tr>-->
+        </thead>
+		<tbody>
+			<tr><td>social attack i.e. insult or threat</td><td>variable, Referee's judgement</td></tr>
+			<tr><td>flee a social conflict without enemy's consent</td><td>+1</td></tr>
+			<tr><td>shocked by reveal of Secret</td><td>+d6</td></tr>
+			<tr><td>own compromising Secret revealed</td><td>fill all empty slots with Stress</td></tr>
+			<tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>
+		</tbody>
     </table><!--the gain should always be +1, or +d-something, don't do +2,+3,... A stressor of that magnitude should create uncertainty.-->
 ## Initiative & Combat.
 + If you can't take any more Stress, your can give up, or go to blows.
@@ -108,11 +112,11 @@
 \
 &nbsp;
 + A turn lasts a minute. Each turn, each character can move (20 ft by default), and spend AP. By default, characters have AP equal to their number of Flesh slots. They regain all AP at the start of each turn.
-+ Example actions: make an attack (4 AP), move an extra time (4 AP), reveal a secret (4 AP), pick up or drop something (4 AP), fall or stand from prone (2 AP), draw or stow something (0 AP).
++ Example actions: make an attack (4 AP), reveal a secret (4 AP), pick up or drop something (4 AP), fall or stand from prone (2 AP), draw or stow something (0 AP).
 + The referee decides the AP cost of other actions.
 \
 &nbsp;
-+ Initiative is side-based. On the player turn, move clockwise around the table. The leader of the player party makes a Light Save: on a success the players act first, on a fail the enemies do.
++ Initiative is side-based. On the player turn, move clockwise around the table. The leader of the player party makes a Light Save: on a success the players act first, on a fail the NPCs do.
 + If a character is visible to the enemy when initiative is determined, they cannot act during their side's first turn.
 \
 &nbsp;
