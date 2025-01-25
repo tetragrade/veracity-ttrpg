@@ -36,8 +36,8 @@
         + If you didn't convert a secret to a Secret: your character didn't believe it or consider it important, revealing it can't level them up.
 		+ What makes a Secret?
 			+ Secrets are the atomic components of a conspiracy. Not all hidden information is a secret, something becomes a secret when someone wants to keep it hidden i.e.
-			+ <span style="color: cornflowerblue">"There's a spoon hidden behind a loose brick."</span> Weird. Not a secret.
-			+ <span style="color: cornflowerblue">"There's a knife hidden behind a loose brick. The count hid it there long ago, he killed his elder brother to inherit his father's domain."</span> A secret.
+			+ "There's a spoon hidden behind a loose brick." Weird. Not a secret.
+			+ "There's a knife hidden behind a loose brick. The count hid it there long ago, he killed his elder brother to inherit his father's domain." A secret.
 		<!--
 			Secrets are the atomic components of a conspiracy. Not all hidden information is a secret, something becomes a secret when someone wants to keep it hidden i.e.
 			"There's a spoon hidden behind a loose brick.": Weird. Not a secret.
