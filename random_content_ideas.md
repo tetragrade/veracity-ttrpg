@@ -1,11 +1,8 @@
 ## Random Content Ideas
 + Magic Word Spellcasting.
-	+ Magic words are special words in the language of magic, they can be used to evoke magical effects.
-	+ The referee determines how magic words are acquired i.e.
-		+ Read a reusable Grimoire, takes 1 hour.
-		+ Summon a demon, it wants payment.
-		+ Study the environment to extract a related word, takes 1 day.
-	+ Each Magic Word fills a Light Slot. Example words: MW Fire, MW Sphere, MW Summon.	
+	+ Magic Words are special words in the language of magic, they can be used to evoke magical effects.
+	+ Magic Words are gained upon reading a Grimoire containing the word: takes 1 hour and doesn't consume the Grimoire.
+	+ Each Magic Word fills a Light Slot. Example words: MW Fire, MW Sphere, MW Summon.
 	\
 	&nbsp;
 	+ You cast magic by combining Magic Words into the name of a spell. You can insert linking words such as articles, conjunctions, prepositions, and pronouns.<br>Magic Words are stem words, and you can change the ending. i.e. Fire → Fires, Fired, Fiery.
@@ -24,21 +21,4 @@
 &nbsp;
 + Weapons.
 	+ Vorpal Sword (2d6 dmg, instantly kills on a 12).
-	+ Psi-Blade (d4 damage, target gains a Stress).
-\
-&nbsp;
-+ Misc Mechanics:
-	+ Clash for a magic sword.
-		+ When you attack, instead of dealing damage you can clash swords and add a Drama (fills a Light Slot, you may remove it any time, forcibly removed at end of scene).
-		+ Drama can be spent to activate abilities.
-\
-&nbsp;
-+ Light Items (as situational resources as in Sunless Sea) i.e.
-	+ Glimpse of the Goddess (fills a Light Slot, you can recognise the goddess' face, and tell a tale of her beauty: you and all vic-light characters that hear you remove all Stress, then remove this item).
-	+ Grim Reminder (fills a Light Slot, associated with a task which you should write in this slot, -4 Dif on Saves related to the task, can be removed only by completing the task).
-	\
-	&nbsp;
-	+ Idea.
-		+ Gained from talking to someone and questioning things.
-		+ Fills a Light Slot, has a progress clock and states the things that advance it.
-		+ When you complete the Idea, you gain a Light item or misc feature.
+	+ Psi-Blade (d4 damage, target gains 1 Stress).

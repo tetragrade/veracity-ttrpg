@@ -1,3 +1,10 @@
+<!--
+	TODO
+	diagram of components and stuff,
+	guidance for what's important and what can be tossed
+	
+-->
+
 # <h1 style="text-align:center">Veracity TTRPG</h1>
 
 + Characters have HP, Facets, and two slot-based inventories.
@@ -27,6 +34,10 @@
 		+ Secrets must be the truth, and characters must have reasonable grounds to believe they are. If something is known to be false, even metatextually, it can't be a Secret. 
         + Each character can only learn a given Secret once, and once a Secret is revealed by anyone, it's just news.
         + If you didn't convert a secret to a Secret: your character didn't believe it or consider it important, revealing it can't level them up.
+		+ What makes a Secret?
+			+ Secrets are the atomic components of a conspiracy. Not all hidden information is a secret, something becomes a secret when someone wants to keep it hidden i.e.
+			+ <span style="color: cornflowerblue">"There's a spoon hidden behind a loose brick."</span> Weird. Not a secret.
+			+ <span style="color: cornflowerblue">"There's a knife hidden behind a loose brick. The count hid it there long ago, he killed his elder brother to inherit his father's domain."</span> A secret.
 		<!--
 			Secrets are the atomic components of a conspiracy. Not all hidden information is a secret, something becomes a secret when someone wants to keep it hidden i.e.
 			"There's a spoon hidden behind a loose brick.": Weird. Not a secret.
@@ -93,12 +104,13 @@
 			<!--<tr><th>Cause</th><th>Stress Gain</th><tr>-->
 			<!--<tr><td>rejected Facet</td><td>+ Facet die roll</td></tr>-->
         </thead>
+
 		<tbody>
 			<tr><td>social attack i.e. insult or threat</td><td>variable, Referee's judgement</td></tr>
 			<tr><td>flee a social conflict without enemy's consent</td><td>+1</td></tr>
 			<tr><td>shocked by reveal of Secret</td><td>+d6</td></tr>
 			<tr><td>own compromising Secret revealed</td><td>fill all empty slots with Stress</td></tr>
-			<tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>
+			<tr><td>kill a person or attempt to<br>(1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>
 		</tbody>
     </table><!--the gain should always be +1, or +d-something, don't do +2,+3,... A stressor of that magnitude should create uncertainty.-->
 ## Initiative & Combat.
@@ -116,8 +128,26 @@
 + The referee decides the AP cost of other actions.
 \
 &nbsp;
-+ Initiative is side-based. On the player turn, move clockwise around the table. The leader of the player party makes a Light Save: on a success the players act first, on a fail the NPCs do.
-+ If a character is visible to the enemy when initiative is determined, they cannot act during their side's first turn.
++ Initiative is side-based. On the players' turn, move clockwise around the table. The leader of the player party makes a Light Save: on a success the players act first, on a fail the NPCs do.
++ Surprise.
+	+ Each side's first turn is the surprise turn. Damage dealt on an attacker's first turn bypasses HP.
+	+ If a character is visible to the enemy when initiative is determined, they cannot act during their side's first turn.
 \
 &nbsp;
 + Fleeing combat requires a clear path to escape, and a successful Flesh Save.
+
+---
+
+## Guidance for Referees
++ What is core to the system, and what can be trivially changed?
+	1. The core is the level up system. If this is removed, I wouldn't really consider it the same game.
+	2. TODO comment on Facets & Control Systems
+	3. The choice of stats are important because Light supports the two afforemention systems.
+		+ Adding more stats shouldn't be too distruptive.
+		+ But if you remove Light or Flesh, it'd take a bit of work to ensure that pts 1 & 2 are still in place.
+	4. The combat rules are designed to be simple, they could be swapped out with little impact.
++ When should something deal damage, vs Wounds?.
+	+ Wounds should be inflicted whenever HP loss wouldn't contribute drain resources.
+	+ A common example would be environmental damage i.e. traps and falls.
+	+ I recommend d6 dmg per 20-ft fallen, but of course it depends.
++ An example scenario is available at https://github.com/tetragrade/frostbearer
