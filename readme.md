@@ -109,7 +109,7 @@
 			<tr><td>flee a social conflict without enemy's consent</td><td>+1</td></tr>
 			<tr><td>shocked by reveal of Secret</td><td>+d6</td></tr>
 			<tr><td>own compromising Secret revealed</td><td>fill all empty slots with Stress</td></tr>
-			<tr><td>kill a person or attempt to(1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>
+			<tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>
 		</tbody>
     </table><!--the gain should always be +1, or +d-something, don't do +2,+3,... A stressor of that magnitude should create uncertainty.-->
 ## Initiative & Combat.
