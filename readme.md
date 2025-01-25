@@ -81,7 +81,7 @@
 + Your character can gain additional Facets by acting in accordance with the new hypothetical Facet.
 	+ This typically requires a concerted effort over one or two sessions.
 	+ The referee should decide any mechanics on a case-by-case-basis. i.e. random percentage chance, fill a clock, complete a quest or task.
-+ When your character take an extreme action (Referee's judgement) for or against a Facet, you may choose to increase or decrease the facet's die size.
++ When your character take an extreme action (Referee's judgement) for or against a Facet, you may modify the facet's die size, (increase or decrease, as appropriate).
 + d4 Facets can be replaced, given appropriate fictional positioning.
 ## Disablement & Death.
 + Characters die when their Flesh slots are entirely full of Wounds.
