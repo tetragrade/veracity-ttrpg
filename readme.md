@@ -53,6 +53,7 @@
     + Ruses.
         + A Ruse represents a deliberate untruth that you're maintaining.
 		+ Add it to a Light slot when you start to maintain the Lie, remove it when you stop.
+		+ If you lie without holding a matching Ruse, you must succeed a Light Save or it fails to be convincing.
     + Stress.
         + You gain Stress for acting against a Facet (see Facets), and violating social Convention (see Combat & Initiative). Enemies and hostile environments may also inflict Stress.
         + Remove 1 Stress each time you spend a full day relaxing in daylight.
