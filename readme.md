@@ -69,13 +69,19 @@
 &nbsp;
 <br><br><table>
 		<thead>
-			<tr style="text-align:center"><th colspan=2>Common Dif Modifiers</th></tr>
+			<tr><th colspan=2tr>Common Dif Modifiers</th></tr>
 			<!--<tr><th>Cause</th><th>Stress Gain</th><tr>-->
 			<!--<tr><td>rejected Facet</td><td>+ Facet die roll</td></tr>-->
         </thead>
 		<tbody>
-			<tr style="text-align:center"><td>appropriate tool</td><td>-5</td></tr>
-			<tr style="text-align:center"><td>this is your only chance</td><td>-5</td></tr>
+			<tr>
+				<tdtr>appropriate tool</td>
+				<tdtr>-5</td>
+			</tr>
+			<tr>
+				<tdtr>this is your only chance</td>
+				<tdtr>-5</td>
+			</tr>
 			<!--<tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>-->
 		</tbody>
     </table><!--the gain should always be +1, or +d-something, don't do +2,+3,... A stressor of that magnitude should create uncertainty.-->
@@ -119,15 +125,27 @@
 &nbsp;
 <br><br><table>
 		<thead>
-			<tr style="text-align:center"><th colspan=2>Examples of Causes of Stress</th></tr>
+			<tr><th colspan=2tr>Examples of Causes of Stress</th></tr>
 			<!--<tr><th>Cause</th><th>Stress Gain</th><tr>-->
 			<!--<tr><td>rejected Facet</td><td>+ Facet die roll</td></tr>-->
         </thead>
 		<tbody>
-			<tr style="text-align:center"><td>social attack i.e. insult or threat</td><td>variable, Referee's judgement</td></tr>
-			<tr style="text-align:center"><td>flee a social conflict without enemy's consent</td><td>+1</td></tr>
-			<tr style="text-align:center"><td>shocked by reveal of Secret</td><td>+d6</td></tr>
-			<tr style="text-align:center"><td>own compromising Secret revealed</td><td>fill all empty slots with Stress</td></tr>
+			<tr>
+				<tdtr>social attack i.e. insult or threat</td>
+				<tdtr>variable, Referee's judgement</td>
+			</tr>
+			<tr>
+				<tdtr>flee a social conflict without enemy's consent</td>
+				<tdtr>+1</td>
+			</tr>
+			<tr>
+				<tdtr>shocked by reveal of Secret</td>
+				<tdtr>+d6</td>
+			</tr>
+			<tr>
+				<tdtr>own compromising Secret revealed</td>
+				<tdtr>fill all empty slots with Stress</td>
+			</tr>
 			<!--<tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>-->
 		</tbody>
     </table><!--the gain should always be +1, or +d-something, don't do +2,+3,... A stressor of that magnitude should create uncertainty.-->
