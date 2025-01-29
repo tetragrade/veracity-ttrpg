@@ -20,14 +20,14 @@
         + Evidence is any item that is being carried to support the truthfulness of a Secret.
     + Means.
         + Means are any item that is worth at least a day's Room & Board (R&B), or is a large or unusual tool.
-	    + Currency should tracked in bundles worth a day's R&B. Handwave insubstantial amounts.
+	    + Coinage should tracked in bundles worth a day's R&B. Handwave insubstantial amounts.
     + Wounds.
         + Wounds are damage to your body.
         + Remove 1 Wound each time you spend a full day resting in a safe area with access to medical treatment.
     + Other inconsequential items should be grouped in kits as Means, or handwaved.
 \
 &nbsp;
-+ Light slots are for mental objects, such as Secrets, Favors, & Stress. <!-- This is intended as a storygame-type mechanic that produces a "setup scene, payoff scene" structure. First, you learn about the secret, and the characters must discuss it in order to add it to their inventory. Then, later, you must discuss it again in order to expose it. But secrets are a double-edged sword: a weak secret takes up light slots and is hard to remove, it makes it easier to hit critical stress.-->
++ Light slots are for mental objects, such as Secrets, Ruses, & Stress.
     + Secrets.
         + Secrets are a critical resource. They are social weapons, and revealing them is the only way to level up. 
         + When your character hears something that sounds secret, ask the other players (including the referee), if it sounds like a Secret. If they agree, add it to a Light slot with an appropriate description.
@@ -39,15 +39,20 @@
 			+ "There's a spoon hidden behind a loose brick." Weird. Not a secret.
 			+ "There's a knife hidden behind a loose brick. The count hid it there long ago, he killed his elder brother to inherit his father's domain." A secret.
 		<!--
+			Secrets are intended as a storygame-type mechanic that produces a "setup scene, payoff scene" structure.
+			First, you learn about the secret, and the characters must discuss it in order to add it to their inventory.
+			Then, later, you must discuss it again in order to expose it. 
+			However, secrets are a double-edged sword: a weak secret takes up light slots and is hard to remove, makes it easier to hit max stress and break.
+		
 			Secrets are the atomic components of a conspiracy. Not all hidden information is a secret, something becomes a secret when someone wants to keep it hidden i.e.
 			"There's a spoon hidden behind a loose brick.": Weird. Not a secret.
 			"There's a knife hidden behind a loose brick. The count hid it there long ago, he killed his elder brother to inherit his father's domain.": A secret.
 			
 			All powers-that-be have skeletons in their closet. If you want to level up you will have to challenge the status quo.
 		-->
-    + Favors.
-        + A Favor represents a debt owed to you by an NPC.
-        + If a favor isn't converted a Favor, your character forgot it or isn't willing to call it in for some reason.
+    + Ruses.
+        + A Ruse represents a deliberate untruth that you're maintaining.
+		+ Add it to a Light slot when you start to maintain the Lie, remove it when you stop.
     + Stress.
         + You gain Stress for acting against a Facet (see Facets), and violating social Convention (see Combat & Initiative). Enemies and hostile environments may also inflict Stress.
         + Remove 1 Stress each time you spend a full day relaxing in daylight.
@@ -60,6 +65,20 @@
 \
 &nbsp;		
 + If the slot is empty you succeed, otherwise you fail.
+\
+&nbsp;
+<br><br><table style="text-align:center">
+		<thead>
+			<tr><th colspan=2>Common Dif Modifiers</th></tr>
+			<!--<tr><th>Cause</th><th>Stress Gain</th><tr>-->
+			<!--<tr><td>rejected Facet</td><td>+ Facet die roll</td></tr>-->
+        </thead>
+		<tbody>
+			<tr><td>appropriate tool</td><td>-5</td></tr>
+			<tr><td>this is your only chance</td><td>-5</td></tr>
+			<!--<tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>-->
+		</tbody>
+    </table><!--the gain should always be +1, or +d-something, don't do +2,+3,... A stressor of that magnitude should create uncertainty.-->
 ## Levelling Up.
 + Each time a PC shocks an NPC by revealing Secrets (optionally supported by Evidence), they gain a slot (Light or Flesh, your choice).
 + Each Secret and Evidence can only be used in this way once, and each revelation must be greater than the last.
@@ -98,9 +117,9 @@
 + Examples of Convention: never swear at this posh dinner (+1), never question the gods (+d4), always wear clothes (1/scene, +d6).
 \
 &nbsp;
-<br><br><table>
+<br><br><table style="text-align:center">
 		<thead>
-			<tr><th colspan=2 style="text-align:center">Examples of Causes of Stress</th></tr>
+			<tr><th colspan=2>Examples of Causes of Stress</th></tr>
 			<!--<tr><th>Cause</th><th>Stress Gain</th><tr>-->
 			<!--<tr><td>rejected Facet</td><td>+ Facet die roll</td></tr>-->
         </thead>
@@ -109,7 +128,7 @@
 			<tr><td>flee a social conflict without enemy's consent</td><td>+1</td></tr>
 			<tr><td>shocked by reveal of Secret</td><td>+d6</td></tr>
 			<tr><td>own compromising Secret revealed</td><td>fill all empty slots with Stress</td></tr>
-			<tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>
+			<!--<tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>-->
 		</tbody>
     </table><!--the gain should always be +1, or +d-something, don't do +2,+3,... A stressor of that magnitude should create uncertainty.-->
 ## Initiative & Combat.
@@ -149,4 +168,6 @@
 	+ Wounds should be inflicted whenever HP loss wouldn't contribute drain resources.
 	+ A common example would be environmental damage i.e. traps and falls.
 	+ I recommend d6 dmg per 20-ft fallen, but of course it depends.
++ The rules are asking if something true? How do I know if something is true?
+	+ This is really a broader issue that I can't help you with. Consult your people's records.
 + An example scenario is available at https://github.com/tetragrade/frostbearer
