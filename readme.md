@@ -77,11 +77,11 @@
 		<tbody>
 			<tr>
 				<td>appropriate tool</td>
-				<td>-5</td>
+				<td>-3</td>
 			</tr>
 			<tr>
 				<td>this is your only chance</td>
-				<td>-5</td>
+				<td>-3</td>
 			</tr>
 			<!--<tr><td>kill a person or attempt to (1/scene)</td><td>+d4 Stress, unless commanded by an external power or sociopathic (PCs cannot be sociopaths)</td></tr>-->
 		</tbody>
