@@ -99,8 +99,8 @@
 + Each Facet has an associated die size ∈ {d4, d6, d8 d10, d12}. This corresponds to its prominence.
 \
 &nbsp;
-+ Whenever a save is made (by anyone in the scene) as a consequence of acting on one of your Facets, roll the die and modify the difficulty by the total, in your favor.
-+ However, whenever your character acts counter to one of their Facets, gain Stress equal to a roll of the die. i.e. a "Cruel" character acts nice to someone.
++ Whenever a save is made (by anyone in the scene) as a consequence of acting on one of your Facets, roll the die and modify the difficulty by the total, in your favour.
++ However, whenever your character acts counter to one of their Facets, gain Stress equal to a roll of the die. i.e. a "Cruel" character is nice to someone.
 \
 &nbsp;
 + Characters start with two d6 Facets and can have up to four.
@@ -111,7 +111,7 @@
 + d4 Facets can be replaced, given appropriate fictional positioning.
 ## Disablement & Death.
 + Characters die when their Flesh slots are entirely full of Wounds.
-+ If a character gains stress with empty Light slots, but not enough to fit all the Stress, the remaining Stress is disgregarded.
++ If a character gains stress with empty Light slots, but not enough to fit all the Stress, the remaining Stress is disregarded.
 + If they gain Stress with no free Light slots, they Break:
     + The first time: They lose their will to seek. They can no longer level up.
     + Subsequently:	They suffer a heart attack: add d20 Wounds.
@@ -151,9 +151,7 @@
 		</tbody>
     </table><!--the gain should always be +1, or +d-something, don't do +2,+3,... A stressor of that magnitude should create uncertainty.-->
 ## Initiative & Combat.
-+ If you can't take any more Stress, your can give up, or go to blows.
-\
-&nbsp;
+
 + Characters start with 0 HP, it is granted by protective equipment & magical means. They regain all HP at the end of each scene.
 + Damage usually reduces HP. In some cases Damage inflicts an equal number of Wounds instead: when the target is immobilised, unsuspecting, or has 0 HP.
 + If the outcome of an attack is uncertain, the defender is always the one to Save.
@@ -179,8 +177,8 @@
 + What is core to the system, and what can be trivially changed?
 	1. The core is the level up system. If this is removed, I wouldn't really consider it the same game.
 	2. TODO comment on Facets & Control Systems
-	3. The choice of stats are important because Light supports the two afforemention systems.
-		+ Adding more stats shouldn't be too distruptive.
+	3. The choice of stats are important because Light supports the two aforementioned systems.
+		+ Adding more stats shouldn't be too disruptive.
 		+ But if you remove Light or Flesh, it'd take a bit of work to ensure that pts 1 & 2 are still in place.
 	4. The combat rules are designed to be simple, they could be swapped out with little impact.
 + When should something deal damage, vs Wounds?.
