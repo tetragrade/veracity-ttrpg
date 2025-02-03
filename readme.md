@@ -103,7 +103,7 @@
 + However, whenever your character acts counter to one of their Facets, gain Stress equal to a roll of the die. i.e. a "Cruel" character acts nice to someone.
 \
 &nbsp;
-+ Characters start with one d6 Facet and can have up to four.
++ Characters start with two d6 Facets and can have up to four.
 + Your character can gain additional Facets by acting in accordance with the new hypothetical Facet.
 	+ This typically requires a concerted effort over one or two sessions.
 	+ The referee should decide any mechanics on a case-by-case-basis. i.e. random percentage chance, fill a clock, complete a quest or task.
