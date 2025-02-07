@@ -13,6 +13,8 @@
 + Characters have two slot-based inventories (Light + Flesh). They can have at most 18 Light & 18 Flesh slots.
 + Fill and unlock your slots from lowest to highest.
 + Characters start with 4 Flesh slots, 4 Light slots, and 4 slots to assign freely.
++ Your inventories are everything that burdens you, not just what you're carrying. Dropping something for a second doesn't immediately remove it: it must be left behind.
++ You can rearrange items in slots freely, at any time. If your capacity is reduced i.e. an item is forcibly added or a slot is removed, you can choose the item that is removed.
 \
 &nbsp;
 + Flesh slots are for physical objects, such as Evidence, Means, & Wounds.
