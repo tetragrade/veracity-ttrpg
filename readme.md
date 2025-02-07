@@ -11,7 +11,7 @@
 + Other miscellaneous properties & abilities are described on the sheet in natural language, under "other features".
 ## Inventories.
 + Characters have two slot-based inventories (Light + Flesh). They can have at most 18 Light & 18 Flesh slots.
-+ Fill and unlock your slots from lowest to highest.
++ Unlock your slots from lowest to highest, but fill them from highest to lowest. Empty slots should always be continuous at the low numbers.
 + Characters start with 4 Flesh slots, 4 Light slots, and 4 slots to assign freely.
 + Your inventories are everything that burdens you, not just what you're carrying. Dropping something for a second doesn't immediately remove it: it must be left behind.
 + You can rearrange items in slots freely, at any time. If your capacity is reduced i.e. an item is forcibly added or a slot is removed, you can choose the item that is removed.
@@ -67,7 +67,7 @@
     + If it requires physical effort, look at your Flesh.
 \
 &nbsp;		
-+ If the slot is empty you succeed, otherwise you fail.
++ If the slot contains a Wound or Stress, you fail. Otherwise, you succeed.
 \
 &nbsp;
 <br><br><table>
