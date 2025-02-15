@@ -7,7 +7,7 @@ body {
 	background-color: #181A1B;
 	
 	margin-left: 2rem;
-	margin-right: 2rem;
+	margin-right: 4rem;
 }
 
 @media (orientation: landscape) {
@@ -16,14 +16,18 @@ body {
 		grid-template-columns: auto auto;
 	}
 }
+h1,h2,h3 {
+	/*from a particular anime*/
+	font-family: Georgia, Serif;
+	font-weight: bold;
+	transform: scale(.66,1); /*bad way to do this, but Times New Roman doesn't support font-stretch*/
+}
 
 h1 {
-	font-size: 5rem;
-}
-h1,h2,h3 {
-	font-family: 'Times New Roman', Times, serif;
-	font-weight: bold;
-	transform: scale(.79,1); /*bad way to do this, but Times New Roman doesn't support font-stretch*/
+	font-size: 10rem;
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 p {
@@ -70,11 +74,15 @@ body > a {
 	font-size: 1.5rem;
 }
 
+.alignment {
+	/*from a particular anime*/
+	font-family: Georgia, Serif;
+	font-weight: bold;
+}
+
 .flex-horizontal {
 	display: flex;
 	gap: 2rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
 }
 
 .flex-horizontal > div {
@@ -82,15 +90,126 @@ body > a {
 	flex-basis: 0;
 }
 
-marquee > p {
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+}
+
+.charsheet-print-text {
+	/*from a particular anime*/
+	font-family: Georgia, Serif;
+	font-weight: bold;
+
+}
+.charsheet-handwritten-text {
+	
+}
+.marquee {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 5rem;
+}
+.marquee > p {
+	position: absolute;
 	display: inline-block;
+
+	left: -20vw;
+
+	min-width: 10vw;
+
+	padding: 0;
+	margin: 0;
+
 	margin-left: 1rem;
 	margin-right: 1rem;
 
-	font-family: 'Times New Roman', Times, serif;
+
+	text-align: center;
+	/*from a particular anime*/
+	font-family: Georgia, Serif;
 	font-weight: bold;
-	transform: scale(.79,1); /*bad way to do this, but Times New Roman doesn't support font-stretch*/
+	white-space: nowrap;
+
+	animation-name: marquee;
+	animation-duration: 27s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
+#marquee-test-window {
+	position: absolute;
+	left: 40vw;
+
+	border: 2px solid red;
+	
+	height: 2rem;
+	width: 20vw;
+}
+/*marquee needs to be on tracks identical speeds and durations, where the end point is lined up, and with equal element width*/
+.marquee > .marquee1 {
+	animation-delay: 0s;
+}
+.marquee > .marquee2 {
+	animation-delay: 1.5s;
+}
+.marquee > .marquee3 {
+	animation-delay: 3s;
+}
+.marquee > .marquee4 {
+	animation-delay: 4.5s;
+}
+.marquee > .marquee5 {
+	animation-delay: 6s;
+}
+.marquee > .marquee6 {
+	animation-delay: 7.5s;
+}
+.marquee > .marquee7 {
+	animation-delay: 9s;
+}
+.marquee > .marquee8 {
+	animation-delay: 10.5s;
+}
+.marquee > .marquee9 {
+	animation-delay: 12s;
+}
+.marquee > .marquee10 {
+	animation-delay: 13.5s;
+}
+.marquee > .marquee11 {
+	animation-delay: 15s;
+}
+.marquee > .marquee12 {
+	animation-delay: 16.5s;
+}
+.marquee > .marquee13 {
+	animation-delay: 18s;
+}
+.marquee > .marquee14 {
+	animation-delay: 19.5s;
+}
+.marquee > .marquee15 {
+	animation-delay: 21s;
+}
+.marquee > .marquee16 {
+	animation-delay: 22.5s;
+}
+.marquee > .marquee17 {
+	animation-delay: 24s;
+}
+.marquee > .marquee18 {
+	animation-delay: 25.5s;
+}
+@keyframes marquee {
+	0% { 
+		left: -20vw;
+	}
+	100% {
+		left: CALC(10vw * 18);
+	}
+}
+
 
 .quote {
 	opacity: 50%;
@@ -107,16 +226,50 @@ marquee > p {
 	margin: 1rem;
 }
 
-.item-light > p, .item-flesh > p
+.item-light > p, .item-flesh > p {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 
 .item-light > .item-header, .item-flesh > .item-header {
 	font-weight: bold;
+}
+
+.feature-key {
+	font-weight: bolder;
+	text-decoration: underline;
 }
 
 #combat {
 	display: inline;
 }
 
-#facet-when-you-save > p, #facet-when-you-resist > p {
+#facet-when-you-save p, #facet-when-you-resist p {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	text-align: justify;
+}
+
+#mock-charsheet-header {
+	width: 100%;
+}
+#mock-charsheet-header > div,
+#mock-charsheet-inventories > div{
+	border: 2pt solid white;
+}
+
+#mock-charsheet-header p {
+	margin: 1rem;
 	text-align: center;
+}
+
+#mock-charsheet-facets-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+#mock-charsheet-other-features ul {
+	list-style: none;
 }
