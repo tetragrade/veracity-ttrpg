@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Veracity Playtest | Magic Words</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=500, initial-scale=0.5" />
+		
+		<link rel="stylesheet" href="site.css">
+	</head>
+	<body>
+		<h1>VERACITY</h1>
+
+		<div id="levelling-up">
+			<h2>TELL THE TRUTH</h2>
+			<p>
+				In Veracity you play as an agent of <span class="alignment">TRUTH</span>.
+				Each time you shock an NPC by exposing an agent of <span class="alignment">DECEIT</span>, you Level Up: gain an inventory slot, you choose which kind.
+				<br>
+				You can only expose any given scheme once, and each revelation must be greater than the last.
+			</p>
+		</div>
+		<div id="your character">
+			<div id="inventories">
+				<H2>INVENTORIES</H2>
+				All characters have two slot-based inventories (Light + Flesh). You can have at most 18 Light & 18 Flesh slots.
+				<div>
+					<p>Flesh slots are for physical objects.</p>
+					
+					<div id="item-evidence" class="item-flesh">
+						<p class="item-header">Evidence: proof that deceit occurred.</p>
+					</div>
+					<div id="item-wound" class="item-flesh">
+						<p class="item-header">Wounds: bodily damage</p>
+						<p>
+							Remove 1 Wound each time you spend a full day resting in a safe area with access to medical treatment.
+							You die if all of your Flesh Slots contain Wounds.
+						</p>
+					</div>
+					<div id="item-means" class="item-flesh">
+						<p class="item-header">Means: treasure, large or unusual tools</p>
+					</div>
+				</div>
+					
+				<div>
+					<p>Light slots are for mental objects.</p>
+					<div id="item-secret" class="item-light">
+						<p class="item-header" class="item-header">Secrets: lies, tricks, atoms of conspiracy</p>
+						<p>
+							When your character hears something that sounds secret, you may add it as a Secret (with an appropriate description). Chose not to? your character didn't believe it, or considered it unimportant.
+							Revealing Secrets advances <span class="alignment">TRUTH</span>. They are weapons against tricksters: having your secret revealed inflicts Stress.
+							Secrets must be the truth, and characters must have reasonable grounds to believe them. If something is known to be false, even metatextually, it can't be a Secret.
+						</p>
+					</div>
+					<div id="item-stress" class="item-light">
+						<p class="item-header" class="item-header">Stress: mental damage</p>
+						<p>
+							You gain Stress for acting against a <a name="facets"></a> or violating social <a name="convention">Convention</a>. Enemies and hostile environments may also inflict Stress.
+							Remove 1 Stress each time you spend a full day relaxing in daylight.
+							If all of your Light Slots contain Stress, you Break: the first time, you lose the ability to Level Up. Each additional time, you gain d20 Wounds.
+							After Breaking, remove all Stress.
+						</p>
+					</div>
+					<div id="item-ruse" class="item-light">
+						<p class="item-header">Ruse: don't get any ideas</p>
+						<p>
+							A Ruse represents a deliberate untruth that you're maintaining.
+							Add it to a Light slot when you start to maintain the Lie, remove it when you stop.
+							No slots? Tough luck.
+						</p>
+					</div>
+					<div id="item-much-much-more" class="item-light">
+						<p class="item-header">And Much Much More</p>
+						<p>
+							There are other kinds of things. The Referee decides whether something fills a slot and what kind.
+							The Referee might create different items i.e. in connection with a monster's special ability, or to provide character advancement.
+						</p>
+					</div>
+				</div>
+			
+				<p>
+					Characters start with 4 Flesh slots, 4 Light slots, and 4 slots to assign freely.
+					Unlock your slots from lowest to highest, but fill them from highest to lowest. Empty slots should always be continuous at the low numbers.
+					You can rearrange items in slots freely, at any time. If your capacity is reduced i.e. an item is forcibly added or a slot is removed, you can choose the item that is removed.
+					Other inconsequential things consume no slots: they should be bundled together as one Item, or handwaved.
+				</p>
+			</div>
+			<div id="saving">
+				<p>
+					When you attempt to do something for which the outcome is uncertain, the referee may call for a Save.
+					Roll a d20, lower is better. The rules & referee may add a modifier to represent the difficulty of tasks.
+					Calculate the total after modifiers. On a 0 or lower, you succeed. On an 19+ you fail. Otherwise, look at the corresponding slot:
+				</p>
+				<ul>
+					<li>If it requires mental effort, look at your Light.</li>
+					<li>If it requires physical effort, look at your Flesh.</li>
+				</ul>
+				<p>
+					If the slot is empty, you succeed. Otherwise, you fail.
+				</p>
+			</div>
+			<div>
+				<h2>FACETS</h2>
+				<p>
+					A Facet is a short phrase that describes your character's behaviour, it has an associated die size ∈ {d4, d6, d8 d10, d12}, corresponding to its intensity.
+					Facets can be strengthened or weakened, lost, gained, or modified. The Referee is responsible for determining how and when. 
+				</p>
+				<marquee>
+					<p>POET</p>
+					<p>EVASIVE</p>
+					<p>CRUEL</p>
+					<p>BUTCHER</p>
+					<p>BAKER</p>
+					<p>CANDLESTICK-MAKER</p>
+					<p>VIOLENT</p>
+					<p>PERMA-SERIOUS</p>
+					<p>ALCOHOLIC</p>
+					<p>ANARCHIST</p>
+					<p>NEVER SAY SORRY</p>
+					<p>GAMBLER</p>
+					<p>DUMB LUCK</p>
+					<p>LIBERTARIAN</p>
+					<p>WHIMSY</p>
+					<p>CAFFIENE ELEMENTAL</p>
+					<p>GOD FEARING</p>
+					<p>SUPER HATER</p>                        
+				</marquee>
+				<div>
+					<div class="flex-horizontal">
+						<div id="facet-when-you-save">
+							<h3>WHEN YOU SAVE</h3>
+							<p>Roll the die, subtract it from the total.</p>
+						</div>
+						<p class="quote">"When all you have is a hammer..."</p>
+						<div id="facet-when-you-resist">
+							<h3>WHEN YOU RESIST</h3>
+							<p>Roll the die, gain that much Stress.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="combat">
+			<h2>COMBAT</h2>
+			<div class="flex-horizontal">
+				<div id="initiative-surprise">
+					<h3>INITIATIVE & SURPRISE</h3>
+					<p>The leader of the player party makes a Light Save. On a success, the players act first. Otherwise, the enemy does.</p>
+					<p>Characters that are surprised by the conflict lose all HP, and skip their first turn.</p>
+					<p></p>
+				</div>
+				<div id="damage">
+					<h3>ON YOUR TURN</h3>
+					<p>You can move up to 20-ft, and spend AP. You start each turn with AP equal to your Flesh. The Referee decides the cost of actions, most cost 4 AP i.e. closing a door, making an attack.</p>
+				</div>
+				<div id="damage">
+					<h3>HURTING PEOPLE</h3>
+					<p>
+						The target of an attack is always the one to save.
+					</p>
+					<p>
+						Characters start with 0 HP, it is granted by armor and magical items. All HP is regained at the end of each scene.
+						Damage first reduces HP, then inflicts Wounds. HP is bypassed if the target is immobilised or surprised.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="character-creation" hidden>
+			<p>
+				Characters start 2 Facets (d6), 4 Flesh slots, 4 Light slots, and 4 slots to assign freely.
+			</p>
+		</div>
+	</body>
+</html>

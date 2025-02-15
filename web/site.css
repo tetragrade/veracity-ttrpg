@@ -1,0 +1,122 @@
+body {
+	font-family: consolas;
+	text-align: center;
+	position: relative;
+
+	color: white;
+	background-color: #181A1B;
+	
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+@media (orientation: landscape) {
+	#your-character {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+}
+
+h1 {
+	font-size: 5rem;
+}
+h1,h2,h3 {
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+	transform: scale(.79,1); /*bad way to do this, but Times New Roman doesn't support font-stretch*/
+}
+
+p {
+	font-size: 1rem;
+	line-height: 1.25rem;
+	text-align: justify;
+}
+
+div {
+
+}
+
+ul, ol {
+	list-style-position: outside;
+}
+
+li {
+	text-align: left;
+	padding-bottom: 1rem;
+}
+
+table, td, th {
+	border: 1.5pt solid;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+table {
+	max-width: 100vw;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td, th {
+	padding: .5rem;
+}
+
+th, .td-key {
+	text-align: center;
+}
+
+body > a {
+	font-size: 1.5rem;
+}
+
+.flex-horizontal {
+	display: flex;
+	gap: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+.flex-horizontal > div {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+marquee > p {
+	display: inline-block;
+	margin-left: 1rem;
+	margin-right: 1rem;
+
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+	transform: scale(.79,1); /*bad way to do this, but Times New Roman doesn't support font-stretch*/
+}
+
+.quote {
+	opacity: 50%;
+}
+
+.item-light, .item-flesh {
+	border: 1px solid white;
+	
+	text-align: center;
+
+	width: fit-content;
+	height: fit-content;
+
+	margin: 1rem;
+}
+
+.item-light > p, .item-flesh > p
+
+.item-light > .item-header, .item-flesh > .item-header {
+	font-weight: bold;
+}
+
+#combat {
+	display: inline;
+}
+
+#facet-when-you-save > p, #facet-when-you-resist > p {
+	text-align: center;
+}
