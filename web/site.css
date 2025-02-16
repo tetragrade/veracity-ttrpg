@@ -278,14 +278,12 @@ a:visited {
 }
 
 .info-panel > button {
-	position: static;
-	float: right;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
 	
 	padding: 0;
-	margin-left: 0;
-	margin-bottom: 0;
-	margin-top: 1rem;
-	margin-right: 1rem;
+	margin: 0;
 
 	border-radius: 0;
 
@@ -393,7 +391,7 @@ a:visited {
 	#img-flammarion-engraving {
 		width: 100%;
 	}
-	div > #img-ctrl-rslt-resp {
+	#div-ctrl-rslt-resp {
 		display: none;
 
 	}
