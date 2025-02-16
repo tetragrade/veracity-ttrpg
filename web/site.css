@@ -429,6 +429,7 @@ a:visited {
 	#mock-charsheet-light > p, #mock-charsheet-flesh > p {
 		justify-content: left;
 		padding-left: 1rem;
+		margin-bottom: 1rem;
 	}
 
 	.light-slot::before {
