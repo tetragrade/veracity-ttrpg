@@ -277,6 +277,11 @@ a:visited {
 	display: inline;
 }
 
+.info-panel > button:hover {
+	background-color:white;
+	border: 2pt outset white;
+	color: black;
+}
 .info-panel > button {
 	position: absolute;
 	top: 1rem;
@@ -296,6 +301,8 @@ a:visited {
 
 	font-size: 3rem;
 	font-weight: bold;
+
+	cursor: pointer;
 }
 .info-panel > h2 {
 	margin-top: 2rem;
