@@ -406,6 +406,14 @@ a:visited {
 		display: none;
 
 	}
+	
+
+	#charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves {
+		width: 100%;
+		max-height: 50vh;
+
+		padding-bottom: 1rem;
+	}
 
 	#levelling-up {
 		align-items: center;
