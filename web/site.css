@@ -145,19 +145,6 @@ a:visited {
 	border: 1pt solid white;
 	box-sizing: border-box;
 }
-.inventory-number-header, #mock-charsheet-light-title, #mock-charsheet-flesh-title {
-	height: 4rem;
-	margin-top: 0;
-	margin-bottom: 0;
-	
-	width: fit-content;
-	margin-left: auto;
-	margin-right: auto;
-
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
 .inventory-number-header {
 	margin-top: 2pt;
 
@@ -190,10 +177,6 @@ a:visited {
 	flex-grow: 1;
 	flex-basis: 0;
 	border: 1pt solid white;
-}
-
-
-#mock-charsheet-other-features {
 }
 
 #mock-charsheet-name-hp {
@@ -434,9 +417,14 @@ a:visited {
 		margin-top: 1rem;
 		margin-bottom: 1rem;
 	}
+	.inventory-number-header, #mock-charsheet-light-title, #mock-charsheet-flesh-title {
+		height: 4rem;
+	}
+
 	#charsheet-info-inventories {
 		top: 0;
 	}
+	
 	#mock-charsheet-light, #mock-charsheet-flesh {
 		padding-bottom: .5rem;
 	}
@@ -583,7 +571,9 @@ a:visited {
 	}
 	
 	#charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves,
+	#charsheet-info-light,
 	#charsheet-info-secret, #charsheet-info-ruse, #charsheet-info-stress, #charsheet-info-path, 
+	#charsheet-info-flesh,
 	#charsheet-info-evidence, #charsheet-info-gold-ring, #charsheet-info-wound, #charsheet-info-helmet, #charsheet-info-sword
 	{
 		left: 0;
@@ -639,6 +629,22 @@ a:visited {
 	#mock-charsheet-light, #mock-charsheet-flesh {
 		flex-grow: 1;
 		flex-basis: 0;
+	}
+
+	.inventory-number-header,
+	#mock-charsheet-light-title,
+	#mock-charsheet-flesh-title {
+		height: 4rem;
+		margin-top: 0;
+		margin-bottom: 0;
+		
+		width: fit-content;
+		margin-left: auto;
+		margin-right: auto;
+
+		display:flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.inventory-number {
 		width: 100%;
