@@ -592,6 +592,8 @@ a:visited {
 
 		height: calc(100vh - 2rem);
 		width: calc(100vw - 2rem);
+
+		overflow-y: scroll;
 	}
 
 	#charsheet-info-saves-branch-light-flesh {
