@@ -378,6 +378,10 @@ a:visited {
 	animation: flash-once 1s ease;
 }
 
+.underline {
+	text-decoration: underline;
+}
+
 
 /*
 	Wow! This took me a while.
