@@ -44,9 +44,9 @@ const popupManagers = [
     new PopupManager(["mock-charsheet-facets"],["charsheet-info-facets"]),
     new PopupManager(["mock-charsheet-other-features"],["charsheet-info-other-features"]),
 
-    new PopupManager(["mock-charsheet-light-title"],["charsheet-info-inventories", "charsheet-info-light"]),
+    new PopupManager(["mock-charsheet-light-title"],["charsheet-info-light"]),
     new PopupManager(["mock-charsheet-inventory-divider"],["charsheet-info-saves"]),
-    new PopupManager(["mock-charsheet-flesh-title"],["charsheet-info-inventories", "charsheet-info-flesh"]),
+    new PopupManager(["mock-charsheet-flesh-title"],["charsheet-info-flesh"]),
 
     new PopupManager(["item-evidence"],["charsheet-info-evidence"]),
     new PopupManager(["item-wound"],["charsheet-info-wound"]),
@@ -65,8 +65,8 @@ const popupManagers = [
 document.querySelectorAll(".info-panel > button").forEach((element)=>{
     element.addEventListener("click", () => {
         setCurrentInfoPopup([]);
-    })
-})
+    });
+});
 
 //set up internal links to flash the element they're linking to when the link is used
 const DAMAGE = document.getElementById("damage");
@@ -82,7 +82,7 @@ document.querySelectorAll(".flash-damage-onclick").forEach((element)=>{
         DAMAGE.addEventListener( "animationend",  function() {
             element.classList.remove("flash-once-rounded");    
         } );
-    })
+    });
 });
 
 document.querySelectorAll(".flash-facets-onclick").forEach((element)=>{
@@ -94,7 +94,7 @@ document.querySelectorAll(".flash-facets-onclick").forEach((element)=>{
         FACETS.addEventListener( "animationend",  function() {
             element.classList.remove("flash-once");    
         } );
-    })
+    });
 });
 
 document.querySelectorAll(".flash-conventions-onclick").forEach((element)=>{
@@ -106,5 +106,5 @@ document.querySelectorAll(".flash-conventions-onclick").forEach((element)=>{
         CONVENTIONS.addEventListener( "animationend",  function() {
             element.classList.remove("flash-once-rounded");    
         } );
-    })
+    });
 });

@@ -571,9 +571,7 @@ a:visited {
 	}
 	
 	#charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves,
-	#charsheet-info-light,
 	#charsheet-info-secret, #charsheet-info-ruse, #charsheet-info-stress, #charsheet-info-path, 
-	#charsheet-info-flesh,
 	#charsheet-info-evidence, #charsheet-info-gold-ring, #charsheet-info-wound, #charsheet-info-helmet, #charsheet-info-sword
 	{
 		left: 0;
@@ -583,6 +581,25 @@ a:visited {
 		padding-bottom: 1rem;
 
 		overflow-y: scroll;
+	}
+
+	#charsheet-info-light,	#charsheet-info-flesh {
+		margin: 1rem;
+		padding: 0;
+
+		top: 0;
+		left: 0;
+
+		height: calc(100vh - 2rem);
+		width: calc(100vw - 2rem);
+	}
+
+	#charsheet-info-saves-branch-light-flesh {
+		text-align: left;
+	}
+
+	#saves-branch-light {
+		margin-bottom: 1rem;
 	}
 
 	#charsheet-info-facets > .marquee > p {
