@@ -560,10 +560,15 @@ a:visited {
 	
 	#charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves {
 		width: 100%;
-		max-height: 50vh;
+		height: 75vh;
 
 		padding-bottom: 1rem;
 	}
+
+	#charsheet-info-facets > .marquee > p {
+		font-size: 1rem;
+	}
+
 }
 @media (orientation: landscape) {
 	#img-flammarion-engraving {
