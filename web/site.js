@@ -75,6 +75,10 @@ const CONVENTIONS = document.getElementById("conventions");
 
 document.querySelectorAll(".flash-damage-onclick").forEach((element)=>{
     element.addEventListener("click", () => {
+        //close the popup on mobile
+        if(window.matchMedia("(orientation: portrait)"))
+            setCurrentInfoPopup([]);
+
         DAMAGE.classList.remove("flash-once-rounded");
         setTimeout(() => {
             DAMAGE.classList.add("flash-once-rounded");
@@ -87,6 +91,10 @@ document.querySelectorAll(".flash-damage-onclick").forEach((element)=>{
 
 document.querySelectorAll(".flash-facets-onclick").forEach((element)=>{
     element.addEventListener("click", () => {
+        //close the popup on mobile
+        if(window.matchMedia("(orientation: portrait)"))
+            setCurrentInfoPopup([]);
+
         FACETS.classList.remove("flash-once");
         setTimeout(() => {
             FACETS.classList.add("flash-once");
@@ -99,6 +107,11 @@ document.querySelectorAll(".flash-facets-onclick").forEach((element)=>{
 
 document.querySelectorAll(".flash-conventions-onclick").forEach((element)=>{
     element.addEventListener("click", () => {
+        //close the popup on mobile
+        if(window.matchMedia("(orientation: portrait)"))
+            setCurrentInfoPopup([]);
+
+
         CONVENTIONS.classList.remove("flash-once-rounded");
         setTimeout(() => {
             CONVENTIONS.classList.add("flash-once-rounded");
