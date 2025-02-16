@@ -371,6 +371,10 @@ a:visited {
 	text-decoration: underline;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 
 /*
 	Wow! This took me a while.
@@ -425,8 +429,8 @@ a:visited {
 	#mock-charsheet-light > p, #mock-charsheet-flesh > p {
 		justify-content: left;
 		padding-left: 1rem;
-		text-wrap: nowrap;
-		overflow-y:scroll;
+		
+		
 	}
 
 	.light-slot::before {
@@ -578,7 +582,9 @@ a:visited {
 	#facet-conditional-flex {
 		display: block;
 	}
-
+	#facet-quote {
+		text-align: center;
+	}
 	#facet-conditional-flex > div {
 		margin-left: auto;
 		margin-right: auto;
