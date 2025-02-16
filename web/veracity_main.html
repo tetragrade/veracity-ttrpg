@@ -1,141 +1,148 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Veracity Playtest | Magic Words</title>
+		<title>Veracity Interactive Rules</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=500, initial-scale=1" />
 		
 		<link rel="stylesheet" href="site.css">
+		<script src="site.js" defer></script>
 	</head>
 	<body>
-		<h1>VERACITY</h1>
-
-		<div id="levelling-up">
-			<h2>TELL THE TRUTH</h2>
-			<p>
-				In Veracity you play as an agent of <span class="alignment">TRUTH</span>.
-				Each time you shock an NPC by exposing an agent of <span class="alignment">DECEIT</span>, you Level Up.
-				You can only expose any given scheme once, and each revelation must be more shocking than the last.
-			</p>
-		</div>
-		<div id="your character">
-			<div id="inventories">
-				<H2>CHARACTER SHEET</H2>
-				<p>
-					Explore the interactive character sheet below, cick on a section to learn more.
-				</p>
-				<!-- TODO put this in the interactive sheet
-					The core of a Veracity character is their two slot-based inventories (Light + Flesh). 	
-					You can have at most 18 Light & 18 Flesh slots.
-
-					Characters start with 4 Flesh slots, 4 Light slots, and 4 slots to assign freely.
-					Unlock your slots from lowest to highest, but fill them from highest to lowest. Empty slots should always be continuous at the low numbers.
-					You can rearrange items in slots freely, at any time. If your capacity is reduced i.e. an item is forcibly added or a slot is removed, you can choose the item that is removed.
-					Other inconsequential things consume no slots: they should be bundled together as one Item, or handwaved.
-				-->
-				<div id="mock-charsheet">
-					<div id="mock-charsheet-header" class="flex-horizontal">
-						<div id="mock-charsheet-name">
-							<p><span class="charsheet-print-text">NAME</span></p>
-							<p><span class="charsheet-handwritten-text">Glubbus Blitto</span></p>
-						</div>
-						<div id="mock-charsheet-facets">
-							<p><span class="charsheet-print-text">FACETS</span></p>
-							<div id="mock-charsheet-facets-grid">
-								<p>Observant (d6)</p>
-								<p>Blacksmith (d8)</p>
-								<p>———</p>
-								<p>———</p>
-							</div>
-						</div>
-						<div id="mock-charsheet-other-features">
-							<p><span class="charsheet-print-text">OTHER FEATURES</span></p>
-							<ul>
-								<li><span class="feature-key">Defeated Black Knight ×2</span> Foes dodge your attacks at +2 Dif.</li>
-								<li><span class="feature-key">Grand Master Blackmsith</span> Can craft Legendary items.</li>
-								<li><span class="feature-key">Undercrawl Veteran</span> Always succeed Saves to avoid intoxication.</li>
-							</ul>
-						</div>
-					</div>
-					
-					<div id="mock-charsheet-inventories" class="flex-horizontal">
-						<div id="mock-charsheet-flesh">
-
-							<div id="item-evidence" class="item-flesh">
-								<p class="item-header">Evidence: proof that deceit occurred.</p>
-							</div>
-							<div id="item-wound" class="item-flesh">
-								<p class="item-header">Wounds: bodily damage</p>
-								<p>
-									Remove 1 Wound each time you spend a full day resting in a safe area with access to medical treatment.
-									You die if all of your Flesh Slots contain Wounds.
-								</p>
-							</div>
-							<div id="item-means" class="item-flesh">
-								<p class="item-header">Means: treasure, large or unusual tools</p>
-							</div>
-						</div>
-						<div id="mock-charsheet-light">
-							<div id="item-secret" class="item-light">
-								<p class="item-header" class="item-header">Secrets: lies, tricks, atoms of conspiracy</p>
-								<p>
-									When your character hears something that sounds secret, you may add it as a Secret (with an appropriate description). Chose not to? your character didn't believe it, or considered it unimportant.
-									Revealing Secrets advances <span class="alignment">TRUTH</span>. They are weapons against tricksters: having your secret revealed inflicts Stress.
-									Secrets must be the truth, and characters must have reasonable grounds to believe them. If something is known to be false, even metatextually, it can't be a Secret.
-								</p>
-							</div>
-							<div id="item-stress" class="item-light">
-								<p class="item-header" class="item-header">Stress: mental damage</p>
-								<p>
-									You gain Stress for acting against a <a name="facets"></a> or violating social <a name="convention">Convention</a>. Enemies and hostile environments may also inflict Stress.
-									Remove 1 Stress each time you spend a full day relaxing in daylight.
-									If all of your Light Slots contain Stress, you Break: the first time, you lose the ability to Level Up. Each additional time, you gain d20 Wounds.
-									After Breaking, remove all Stress.
-								</p>
-							</div>
-							<div id="item-ruse" class="item-light">
-								<p class="item-header">Ruse: don't get any ideas</p>
-								<p>
-									A Ruse represents a deliberate untruth that you're maintaining.
-									Add it to a Light slot when you start to maintain the Lie, remove it when you stop.
-									No slots? Tough luck.
-								</p>
-							</div>
-							<div id="item-much-much-more" class="item-light">
-								<p class="item-header">And Much Much More</p>
-								<p>
-									There are other kinds of things. The Referee decides whether something fills a slot and what kind.
-									The Referee might create different items i.e. in connection with a monster's special ability, or to provide character advancement.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<p>Flesh slots are for physical objects.</p>
-				</div>
-					
-				<div>
-					<p>Light slots are for mental objects.</p>
-				</div>
-			</div>
-			<div id="saving">
-				<h2>HOW TO SAVE</h2>
-				<p>
-					When you attempt to do something for which the outcome is uncertain, the referee may call for a Save.
-					Roll a d20, lower is better. The rules & referee may add a modifier to represent the difficulty of tasks.
-					Calculate the total after modifiers. On a 0 or lower, you succeed. On an 19+ you fail. Otherwise, look at the corresponding slot:
-				</p>
-				<div class="flex-horizontal">
-					<div>If it takes mental effort, look at your Light.</div>
-					<div>If it takes physical effort, look at your Flesh.</div>
-				</div>
-				<p class="centered">
-					If the slot is empty, you succeed. Otherwise, you fail.
-				</p>
-			</div>
+		<!--info panels, these are fixed modals that pop up when you click around the character sheet-->
+		<div id="charsheet-info-inventories" class="info-panel" hidden>
+			<h2>INVENTORIES</h2>
 			<div>
-				<h2>FACETS</h2>
+				<p>
+					The core of a Veracity character is their two slot-based inventories (Light + Flesh).
+				</p>
+				<p>
+					You can have at most 18 Light & 18 Flesh slots.
+					Characters start with 4 Flesh slots, 4 Light slots, and 4 slots to assign freely.
+				</p>
+				<p>
+					Slots are unlocked from lowest to highest, but filled from highest to lowest, so that the empty slots are always continuous at the low numbers.
+					You can rearrange items in slots freely, at any time. If your capacity is reduced i.e. an item is forcibly added or a slot is removed, you can choose the item that is removed.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-light" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>LIGHT SLOTS</h2>
+			<div>
+				<p>
+					Certain kinds of ideas consume Light Slots: the usual three are Secrets, Ruses, and Stress. The example character has one of each, plus something less common.
+					Click them to learn more.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-secret" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>SECRETS</h2>
+			<div>
+				<p>
+					When your character hears something that sounds secret, you may add it as a Secret (with an appropriate description).
+					Chose not to? your character didn't believe it, or considered it unimportant.
+				</p>
+				<p>
+					Secrets must be the truth, and characters must have reasonable grounds to believe them.
+					If something is known to be false, even <span class="pseudolink" title="known to the players, but not by the characters">metatextually</span>, it can't be a Secret.
+				</p>
+				<p>
+					Revealing Secrets advances <span class="alignment">TRUTH</span>.
+					When you shock at least one NPC by revealing a Secret, you level up: gain a Slot (Light or Flesh, your choice).
+					An NPC that is both shocked and convinced are likely to become permanent ally or retainer.
+				</p>
+				<p>
+					Secrets are weapons against tricksters: revealing their Secrets inflicts Stress on them, and turns <span class="alignment">NEUTRAL</span> NPCs against them.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-ruse" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>RUSES</h2>
+			<div>
+				<p class="quote">Don't get any ideas</p>
+				<p>
+					A Ruse represents a deliberate untruth that you're maintaining.
+					Add it to a Light slot when you start to maintain the Lie, remove it when you stop.
+					No slots? Tough luck.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-stress" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>STRESS</h2>
+			<div>
+				<p>
+					You gain Stress for acting against a <a class="flash-facets-onclick" href="#mock-charsheet-facets">Facet</a>, or violating social <a class="flash-conventions-onclick" href="#conventions">Convention</a>. Enemies and hostile environments may also inflict Stress.
+				</p>
+				
+				<p>
+					Remove 1 Stress each time you spend a full day relaxing in daylight.
+				</p>
+				
+				<p>
+					If all of your Light Slots contain Stress, you Break: the first time, you lose the ability to Level Up.
+					Each additional time, you gain d20 Wounds.
+					After Breaking, remove all Stress.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-path" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>OTHER ITEMS</h2>
+			<div>
+				<p>
+					All sorts of items enter into Light Slots.
+					You might receive an idea as loot: from a conversation or book.
+					Or suffer a harmful idea as a result of an attack from a foe.
+				</p>
+				<p>
+					The example character is working on learning the Orcish tongue.
+					The Referee has decided that it will require them to achieve a set of goals, and will fill a Light Slot until they're finished. 
+				</p>
+				<p>
+					The Referee is responsible for which ideas should be represented by items.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-flesh" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>FLESH SLOTS</h2>
+			<div>
+				<p>
+					Certain kinds of physical objects consume Flesh slots: the usual three are Evidence, Means, and Wounds. The example character has some of each.
+					Click them to learn more.
+				</p>
+				<p>
+					Other inconsequential things consume no slots: they should be bundled together as one Item, or handwaved.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-path" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>BESPOKE ITEMS</h2>
+			<div>
+				<p>
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-flesh" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>FLESH SLOTS</h2>
+			<div>
+				<p>
+					Certain kinds of physical objects consume Flesh slots: the usual three are Evidence, Means, and Wounds. The example character has one of each kind.
+					Click them to learn more.
+					Other inconsequential things consume no slots: they should be bundled together as one Item, or handwaved.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-facets" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>FACETS</h2>
+			<div>
 				<p>
 					A Facet is a short phrase that describes your character's behaviour, it has an associated die size ∈ {d4, d6, d8 d10, d12}, corresponding to its intensity.
 					Facets can be strengthened or weakened, gained or replaced. The Referee is responsible for determining how and when, though it should be infrequent. 
@@ -168,7 +175,7 @@
 						<div id="facet-when-you-save">
 							<h3>WHEN YOU SAVE</h3>
 							<p>
-								If a Save relates to one of your Facets, roll its die. The Dif is reduced by the total.
+								If a Save relates to one of your Facets, roll its die. The difficulty is reduced by the total.
 							</p>
 						</div>
 						<p class="quote">"When all you have is a hammer-"</p>
@@ -180,35 +187,356 @@
 				</div>
 			</div>
 		</div>
-		<div id="combat">
-			<h2>WAR</h2>
-			<div class="flex-horizontal">
-				<div id="initiative-surprise">
-					<h3>INITIATIVE & SURPRISE</h3>
-					<p>The leader of the player party makes a Light Save. On a success, the players act first. Otherwise, the enemy does.</p>
-					<p>Characters that are surprised by the start of conflict lose all HP, and skip their first turn.</p>
-					<p></p>
-				</div>
-				<div id="damage">
-					<h3>ON YOUR TURN</h3>
-					<p>You can move up to 20-ft, and spend AP. You start each turn with AP equal to your Flesh. The Referee decides the cost of actions, most cost 4 AP i.e. closing a door, making an attack.</p>
-				</div>
-				<div id="damage">
-					<h3>HURTING PEOPLE</h3>
-					<p>
-						The target of an attack is always the one to save.
-					</p>
-					<p>
-						Characters start with 0 HP, it is granted by armor and magical items. All HP is regained at the end of each scene.
-						Damage first reduces HP, then inflicts Wounds. HP is bypassed if the target is immobilised or surprised.
-					</p>
-				</div>
+		<div id="charsheet-info-other-features" class="info-panel" hidden>
+			<button>&times;</button>
+			
+			<h2>OTHER FEATURES</h2>
+			<div>
+				<p>
+					Miscellaneous abilities are described in natural language under Other Features.
+				</p>
+				<p>
+					The Referee should distribute Features for diagetic achievements;
+					this example character has gained a to-hit bonus for defeating two powerful monsters.
+				</p>
 			</div>
 		</div>
-		<div id="character-creation" hidden>
-			<p>
-				Characters start 2 Facets (d6), 4 Flesh slots, 4 Light slots, and 4 slots to assign freely.
-			</p>
+		<div id="charsheet-info-saves" class="info-panel" hidden>
+			<button>&times;</button>
+			
+			<h2>HOW TO SAVE</h2>
+			<div>
+				<p>
+					When you attempt to do something for which the outcome is uncertain, the referee may call for a Save.
+					Roll a d20, lower is better. The rules & referee may add a modifier to represent the difficulty of tasks.
+					Calculate the total after modifiers: On a 0 or lower, you succeed. On an 19+ you fail. Otherwise, look at the corresponding slot:
+				</p>
+				<div id="charsheet-info-saves-branch-light-flesh" class="flex-horizontal">
+					<div class="theme-light">If it takes mental effort, look at your Light.</div>
+					<div class="theme-flesh">If it takes physical effort, look at your Flesh.</div>
+				</div>
+				<p class="centered">
+					If the slot is empty, you succeed. Otherwise, you fail.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-evidence" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>EVIDENCE</h2>
+			<div>
+				<p>
+					The example character found this letter, and they're currently racing back home to expose their commander's treachery.
+				</p>
+				<p>
+					Anything carried for the purpose of exposing <span class="alignment">DECEIT</span>
+					is considered Evidence. Evidence always consumes a Flesh Slot.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-wound" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>WOUNDS</h2>
+			<div>
+				<p>
+					The example character was injured in battle, and this is represented by a Wound.
+				</p>
+				<p>
+					Remove 1 Stress each time you spend a full day resting in a safe area with access to medical treatment.
+				</p>
+				<p>
+					Wounds are gained when your character is harmed. If all of your Flesh Slots contain Wounds, you die.
+					For more info, see <a class="flash-damage-onclick" href="#damage">Hurting People</a>. 
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-gold-ring" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>MEANS</h2>
+			<div>
+				<p>
+					The example character found some treasure!
+				</p>
+				<p>
+					Wealth is measured in Days Room And Board (R&B).
+					Amounts smaller than that are handwaved.
+					
+					Any item worth more than a day's R&B is considered Means:
+					Means always consume a Flesh Slot. 
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-helmet" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>TOOLS</h2>
+			<div>
+				<p>
+					The example character has some armor, granting them HP. Armor is a Tool.
+				</p>
+				<p>
+					Any tool that is rare and unusual, or larger than a dagger, is considered a Tool:
+					Tools always consume a Flesh Slot.
+				</p>
+				<p>
+					HP provides a buffer against Wounds.
+					For more info, see <a class="flash-damage-onclick" href="#damage">Hurting People</a>.
+				</p>
+			</div>
+		</div>
+		<div id="charsheet-info-sword" class="info-panel" hidden>
+			<button>&times;</button>
+			<h2>TOOLS</h2>
+			<div>
+				<p>
+					The example character also has a weapon. Weapons are tools.
+				</p>
+				<p>
+					Any tool that is rare and unusual, or larger than a dagger, is considered a Tool:
+					Tools always consume a Flesh Slot.
+				</p>
+				<p>
+					Weapons can be used to hurt people.
+					For more info about hurting people, see <a class="flash-damage-onclick" href="#damage">Hurting People</a>.
+				</p>
+			</div>
+		</div>
+
+
+
+		<div id="main-container">
+			<div>
+				<h1>VERACITY</h1>
+			</div>
+	
+			<div id="levelling-up" class="flex-horizontal">
+					<div>			
+						<h2>TELL THE TRUTH</h2>
+						<p>
+							In Veracity you play as an agent of <span class="alignment">TRUTH</span>.
+							Each time you shock an NPC by exposing an agent of <span class="alignment">DECEIT</span>, you Level Up (and gain a Slot).
+							You can only expose any given scheme once, and each revelation must be more shocking than the last.
+						</p>
+					</div>
+					<div>
+						<img id="img-flammarion-engraving" src="flammarion_engraving.png">
+					</div>	
+			</div>
+			<div id="your character">
+				<div id="your-character-header">
+					<H2>CHARACTER SHEET</H2>
+					<p>
+						Learn about Veracity by exploring the interactive character sheet below, click on a section for more info.
+					</p>
+					<!-- TODO put this in the interactive sheet
+						Flesh slots are for physical objects.
+						<div id="item-secret" class="item-light" hidden>
+								<p class="item-header" class="item-header">Secrets: lies, tricks, atoms of conspiracy</p>
+								
+							</div>
+							<div id="item-stress" class="item-light" hidden>
+								<p class="item-header" class="item-header">Stress: mental damage</p>
+								
+							</div>
+							<div id="item-ruse" class="item-light" hidden>
+							</div>
+							<div id="item-much-much-more" class="item-light" hidden>
+								<p class="item-header">And Much Much More</p>
+								<p>
+									There are other kinds of things. The Referee decides whether something fills a slot and what kind.
+									The Referee might create different items i.e. in connection with a monster's special ability, or to provide character advancement.
+								</p>
+							</div>
+
+
+
+							<div id="item-evidence" class="item-flesh" hidden>
+								<p class="item-header">Evidence: proof that deceit occurred.</p>
+							</div>
+							<div id="item-wound" class="item-flesh" hidden>
+								<p class="item-header">Wounds: bodily damage</p>
+								<p>
+									Remove 1 Wound each time you spend a full day resting in a safe area with access to medical treatment.
+									You die if all of your Flesh Slots contain Wounds.
+								</p>
+							</div>
+						-->
+				</div>
+				<div id="mock-charsheet">
+					<div id="mock-charsheet-header">
+						<div id="mock-charsheet-name-hp" class="flex-horizontal">
+							<div>	
+								<p><span class="charsheet-print-text">NAME</span></p>
+								<p><span class="charsheet-handwritten-text">Glubb Blitto</span></p>
+							</div>
+							<div>	
+								<p><span class="charsheet-print-text">HP</span></p>
+								<p><span class="charsheet-handwritten-text">4/4</span></p>
+							</div>
+						</div>
+						<div id="mock-charsheet-facets">
+							<p><span class="charsheet-print-text">FACETS</span></p>
+							<div id="mock-charsheet-facets-grid">
+								<p>Observant (d6)</p>
+								<p>Blacksmith (d8)</p>
+								<p>———</p>
+								<p>———</p>
+							</div>
+						</div>
+						<div id="mock-charsheet-other-features">
+							<p><span class="charsheet-print-text">OTHER FEATURES</span></p>
+							<ul>
+								<li><span class="feature-key">Defeated Black Knight ×2</span> Foes dodge your attacks at +2 Dif.</li>
+								<li><span class="feature-key">Grand Master Blackmsith</span> Can craft Legendary items.</li>
+								<li><span class="feature-key">Undercrawl Veteran</span> Always succeed Saves to avoid intoxication.</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div id="mock-charsheet-inventories">
+						<div id="mock-charsheet-light">
+							<p id="mock-charsheet-light-title"><span class="charsheet-print-text theme-light">LIGHT</span></p>
+							<p id="light-empty-1" class="light-slot">———</p>
+							<p id="light-empty-2" class="light-slot">———</p>
+							<p id="light-empty-3" class="light-slot">———</p>
+							<p id="light-empty-4" class="light-slot">———</p>
+							
+							<p id="item-secret" class="light-slot"><b>Secret</b>&nbsp;(our commander is plotting to defect to the orcs)</p>
+							<p id="item-ruse" class="light-slot"><b>Ruse</b>&nbsp;(I'm pretending to be human so I can fight in the war)</p>
+							<p id="item-stress" class="light-slot"><b>Stress</b>&nbsp;(watched my friend Marcus die in battle)</p>
+							<p id="item-path"class="light-slot"><b>Learning Orcish</b>&nbsp;(2/4 progress)</p>
+
+							<p id="light-unrealised-potential-1" class="light-slot unrealised-potential">unrealised potential</p>
+							<p id="light-unrealised-potential-2" class="light-slot unrealised-potential">unrealised potential</p>
+							<p id="light-unrealised-potential-3" class="light-slot unrealised-potential">unrealised potential</p>
+							<p id="light-unrealised-potential-4" class="light-slot unrealised-potential">unrealised potential</p>
+							
+							<p id="light-unrealised-potential-5" class="light-slot unrealised-potential">unrealised potential</p>
+							<p id="light-unrealised-potential-6" class="light-slot unrealised-potential">unrealised potential</p>
+							<p id="light-unrealised-potential-7" class="light-slot unrealised-potential">unrealised potential</p>
+							<p id="light-unrealised-potential-8" class="light-slot unrealised-potential">unrealised potential</p>
+							
+							<p id="light-unrealised-potential-9" class="light-slot unrealised-potential">unrealised potential</p>
+							<p id="light-unrealised-potential-10" class="light-slot unrealised-potential">unrealised potential</p>
+						</div>
+						<div id="mock-charsheet-inventory-divider">
+							<p class="inventory-number-header charsheet-print-text"><b>SAVE</b></p>
+							<p class="inventory-number">1</p>
+							<p class="inventory-number">2</p>
+							<p class="inventory-number">3</p>
+							<p class="inventory-number">4</p>
+							<p class="inventory-number">5</p>
+							<p class="inventory-number">6</p>
+							<p class="inventory-number">7</p>
+							<p class="inventory-number">8</p>
+							<p class="inventory-number">9</p>
+							<p class="inventory-number">10</p>
+							<p class="inventory-number">11</p>
+							<p class="inventory-number">12</p>
+							<p class="inventory-number">13</p>
+							<p class="inventory-number">14</p>
+							<p class="inventory-number">15</p>
+							<p class="inventory-number">16</p>
+							<p class="inventory-number">17</p>
+							<p class="inventory-number">18</p>
+							<p class="inventory-number inventory-number-always-fail">19</p>
+							<p class="inventory-number inventory-number-always-fail">20</p>
+						</div>
+						<div id="mock-charsheet-flesh">
+							<p id="mock-charsheet-flesh-title"><span class="charsheet-print-text theme-flesh">FLESH</span></p>
+							<div id="item-means" class="item-flesh" hidden>
+								<p class="item-header">Means: treasure, large or unusual tools</p>
+							</div>
+							<p id="flesh-empty-1" class="flesh-slot">———</p>
+							<p id="flesh-empty-2" class="flesh-slot">———</p>
+							<p id="flesh-empty-3" class="flesh-slot">———</p>
+							<p id="flesh-empty-4" class="flesh-slot">———</p>
+							
+							<p id="item-evidence" class="flesh-slot"><b>Commander's Note</b>&nbsp;(signed by him, pledges allegiance to the orc lord)</p>
+							<p id="item-gold-ring" class="flesh-slot"><b>Gold Ring</b>&nbsp;(worth 100 days room & board)</p>
+							<p id="item-wound" class="flesh-slot"><b>Wound</b>&nbsp(struck by an orcish arrow)</p>
+							<p id="item-helmet" class="flesh-slot"><b>Helmet</b>&nbsp;(+4 HP)</p>
+							<p id="item-sword" class="flesh-slot"><b>Sword</b>&nbsp;(d6)</p>
+							
+							<p id="flesh-unrealised-potential-2" class="flesh-slot unrealised-potential">unrealised potential</p>
+							<p id="flesh-unrealised-potential-3" class="flesh-slot unrealised-potential">unrealised potential</p>
+							<p id="flesh-unrealised-potential-4" class="flesh-slot unrealised-potential">unrealised potential</p>
+							
+							<p id="flesh-unrealised-potential-5" class="flesh-slot unrealised-potential">unrealised potential</p>
+							<p id="flesh-unrealised-potential-6" class="flesh-slot unrealised-potential">unrealised potential</p>
+							<p id="flesh-unrealised-potential-7" class="flesh-slot unrealised-potential">unrealised potential</p>
+							<p id="flesh-unrealised-potential-8" class="flesh-slot unrealised-potential">unrealised potential</p>
+							<p id="flesh-unrealised-potential-9" class="flesh-slot unrealised-potential">unrealised potential</p>
+							<p id="flesh-unrealised-potential-10" class="flesh-slot unrealised-potential">unrealised potential</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="peace">
+				<h2>PEACE</h2>
+				<div class="flex-horizontal">
+					<div><img id="ctrl-rslt-resp" src="CTRL_RSLT_RESP.png"></div>
+					<div id="conventions">
+						<h3>CONVENTION</h3>
+						<p>
+							During social situations, the referee declares any relevant aspects of social Convention. Characters that violate a Convention gain Stress.
+
+							The Conventions should be displayed in a way that makes them clear to the whole table, and can be modified at any time. i.e. the situation changes, the referee realizes they made an error.
+							If, upon a player declaring an action, the referee realizes that it would violate a previously unspoken Convention. That Convention is added to the list, and the player may cancel the action so it does not occur.
+						</p>
+						<p id="example-conventions-header">Examples of Convention</p>
+						<div id="example-conventions-grid">
+							<p>Never Swear at this Posh Dinner <b>(+1)</b></p>
+							<p>Never Question The Gods <b>(+d4)</b></p>
+							<p>Always Wear Clothes <b>(+d6, 1/scene)</b></p>
+							<p>Don't Cross the Rubicon <b>(+d12)</b></p>
+						</div>
+					</div>
+					<div id="influencing-people">
+						<h3>INFLUENCING PEOPLE</h3>
+						<p>NPCs suffer Stress just like player characters, and it's possible to inflict it
+							on them without going to blows.
+							Characters at risk of critical Stress will almost always back down.</p>
+						<p id="example-social-attacks-header">Common Social Attacks</p>
+						<div id="example-conventions-grid">
+							<p>Trapped By Convention</p>
+							<p>Effective Threat or Insult</p>
+							<p>Flee Argument Without<br>Mutual Agreement<br><b>(+1 Stress)</b></p>
+							<p>Death of Friend or Family<br><b>(+d6 Stress)</b></p>
+							<p>Shocked by Reveal of Secret<br><b>(+d6 Stress)</b></p>
+							<p>Own Secret Revealed<br><b>(+max Stress)</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="combat">
+				<h2>WAR</h2>
+				<div class="flex-horizontal">
+					<div id="initiative-surprise">
+						<h3>INITIATIVE & SURPRISE</h3>
+						<p>The leader of the player party makes a Light Save. On a success, the players act first. Otherwise, the enemy does.</p>
+						<p>Characters that are surprised by the start of conflict lose all HP, and skip their first turn.</p>
+						<p></p>
+					</div>
+					<div id="acting">
+						<h3>ON YOUR TURN</h3>
+						<p>You can move up to 20-ft, and spend AP. You start each turn with AP equal to your Flesh. The Referee decides the cost of actions, most cost 4 AP i.e. closing a door, making an attack.</p>
+					</div>
+					<div id="damage">
+						<h3>HURTING PEOPLE</h3>
+						<p>
+							The target of an attack is always the one to save.
+						</p>
+						<p>
+							Characters start with 0 HP, it is granted by armor and magical items. All HP is regained at the end of each scene.
+							Damage first reduces HP, then inflicts Wounds. HP is bypassed if the target is immobilised or surprised.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="character-creation" hidden>
+				<p>
+					Characters start 2 Facets (d6), 4 Flesh slots, 4 Light slots, and 4 slots to assign freely.
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
