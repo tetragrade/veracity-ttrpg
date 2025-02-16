@@ -582,7 +582,10 @@ a:visited {
 		text-align: center;
 	}
 	
-	#charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves {
+	#charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves,
+	#charsheet-info-secret, #charsheet-info-ruse, #charsheet-info-stress, #charsheet-info-path, 
+	#charsheet-info-evidence, #charsheet-info-gold-ring, #charsheet-info-wound, #charsheet-info-helmet, #charsheet-info-sword
+	{
 		left: 0;
 		width: 100vw;
 		height: 50vh;
