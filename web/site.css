@@ -560,13 +560,19 @@ a:visited {
 	
 	#charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves {
 		width: 100%;
-		height: 75vh;
+		height: 50vh;
 
 		padding-bottom: 1rem;
+
+		overflow-y: scroll;
 	}
 
 	#charsheet-info-facets > .marquee > p {
 		font-size: 1rem;
+	}
+
+	#facet-conditional-flex {
+		display: block;
 	}
 
 }
@@ -719,5 +725,16 @@ a:visited {
 	#charsheet-info-evidence, #charsheet-info-wound, #charsheet-info-gold-ring, #charsheet-info-helmet, #charsheet-info-sword 
 	{
 		left: 15vw;
+	}
+	
+
+	#facet-conditional-flex {
+		display: flex;
+		gap: 2rem;
+	}
+
+	#facet-conditional-flex > div {
+		flex-grow: 1;
+		flex-basis: 0;
 	}
 }
