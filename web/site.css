@@ -330,7 +330,6 @@ a:visited {
 
 #charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves {
 	width: 100%;
-	height: fit-content;
 
 	padding-bottom: 1rem;
 }
@@ -405,14 +404,6 @@ a:visited {
 	#div-ctrl-rslt-resp {
 		display: none;
 
-	}
-	
-
-	#charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves {
-		width: 100%;
-		max-height: 50vh;
-
-		padding-bottom: 1rem;
 	}
 
 	#levelling-up {
@@ -565,6 +556,13 @@ a:visited {
 	}
 	#flesh-unrealised-potential-10::before {
 		content: "18.";
+	}
+	
+	#charsheet-info-facets, #charsheet-info-other-features, #charsheet-info-inventories, #charsheet-info-saves {
+		width: 100%;
+		max-height: 50vh;
+
+		padding-bottom: 1rem;
 	}
 }
 @media (orientation: landscape) {
